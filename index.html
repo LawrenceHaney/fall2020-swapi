@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/main.css">
     <title>fall2020-swapi</title>
 </head>
@@ -19,7 +20,20 @@
         </nav>
     </header>
     <main>
-        <div id="app"></div>
+        <div id="app" class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Characters</h1>
+                    <button type="button" class="btn btn-warning"
+                        onclick="app.charactersController.previous()">Previous</button>
+                    <button type="button" class="btn btn-primary"
+                        onclick="app.charactersController.next()">Next</button>
+                </div>
+            </div>
+            <div class="row" id="characters">
+
+            </div>
+        </div>
     </main>
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
@@ -30,6 +44,7 @@
     </footer>
 
 
+    <!-- NOTE import external libraries before main.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"
         integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg=="
         crossorigin="anonymous"></script>

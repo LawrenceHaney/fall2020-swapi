@@ -1,7 +1,9 @@
 import CharactersController from "./Controllers/CharactersController.js";
 
 class App {
-  charactersController = new CharactersController();
+  constructor() {
+    this.charactersController = new CharactersController();
+  }
 }
 
 window["app"] = new App();

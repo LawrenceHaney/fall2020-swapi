@@ -10,8 +10,10 @@ export default class Character {
   get Template() {
 
     return /*html*/`
-    <div className="card p-2 value">
-        ${this.name} - ${this.birthYear}
+    <div class='col-3'>
+      <div class="card p-2 value">
+          ${this.name} - ${this.birthYear}
+      </div>
     </div>
     `
   }
