@@ -1,14 +1,17 @@
 import Character from "./Models/Character.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
-
+import Starship from "./Models/Starship.js"
 // NOTE AppState is the object used to hold all the data from the app, this replaces _state = {}
 class AppState extends EventEmitter {
   next = ''
   previous = ''
+  nextstarship =''  
+  previousstarship = ''
   /** @type { Character[] } */
   characters = []
-
+/**@type{ Starship[] } */
+  starships = []
 
 }
 
